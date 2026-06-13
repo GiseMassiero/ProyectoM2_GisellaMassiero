@@ -86,12 +86,12 @@ La documentación interactiva está disponible en:
 
 http://localhost:3000/api-docs
 
-<img width="1563" height="943" alt="Captura de pantalla_12-6-2026_215944_localhost" src="https://github.com/user-attachments/assets/f844c967-4518-4b65-bfd8-4b461c144ab4" />
+<img width="1529" height="538" alt="Captura de pantalla_12-6-2026_213057_localhost" src="https://github.com/user-attachments/assets/9477c632-b96a-4815-9bbf-fa1ac4b79ac0" />
 
 
 Desde allí se pueden probar todos los endpoints directamente.
 
-<img width="1529" height="538" alt="Captura de pantalla_12-6-2026_213057_localhost" src="https://github.com/user-attachments/assets/9477c632-b96a-4815-9bbf-fa1ac4b79ac0" />
+<img width="1563" height="943" alt="Captura de pantalla_12-6-2026_215944_localhost" src="https://github.com/user-attachments/assets/f844c967-4518-4b65-bfd8-4b461c144ab4" />
 
 👤 Endpoints - Authors
 
@@ -109,6 +109,9 @@ GET /posts/author/:authorId → Obtener posts por autor
 POST /posts → Crear post
 PUT /posts/:id → Actualizar post
 DELETE /posts/:id → Eliminar post
+
+<img width="1543" height="728" alt="Captura de pantalla_12-6-2026_221223_localhost" src="https://github.com/user-attachments/assets/a0c11c7d-4e8c-4b7a-8bb3-f879397cc280" />
+
 
 
 🧪 Tests
@@ -175,6 +178,8 @@ Pendiente de deployment
 Durante el desarrollo del proyecto utilicé ChatGPT como herramienta de apoyo para:
 
 Organización de la estructura del proyecto
+
+<img width="834" height="756" alt="Captura de pantalla_12-6-2026_221412_chatgpt com" src="https://github.com/user-attachments/assets/95d4ea2f-4d05-49a6-9e75-4178cc6249d8" />
 
 Explicación de conceptos técnicos
 
