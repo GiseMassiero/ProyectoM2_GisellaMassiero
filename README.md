@@ -1,5 +1,6 @@
 
 📚 Blog API - Node.js + Express + PostgreSQL
+
 📌 Descripción del proyecto
 
 Este proyecto es una API REST para un sistema de blog que permite gestionar autores y posts.
@@ -127,6 +128,7 @@ npm test
 npx jest --runInBand
 
 
+
 ⚠️ Importante
 
 Si es la primera vez que clonas el proyecto:
@@ -136,6 +138,7 @@ npm install
 Luego ejecutar:
 
 npm test
+
 
 
 🌍 Deployment (Railway)
@@ -148,15 +151,22 @@ En Railway el puerto se asigna automáticamente:
 
 PORT=process.env.PORT
 
+
+
 🔐 Variables de entorno en producción
 
 Configurar en Railway:
 
 DB_USER
+
 DB_PASSWORD
+
 DB_HOST
+
 DB_PORT
+
 DB_NAME
+
 
 🚀 Pasos de deploy
 
@@ -172,6 +182,7 @@ Deploy automático
 
 Pendiente de deployment
 
+
 🤖 Uso de Inteligencia Artificial
 
 
@@ -180,6 +191,7 @@ Durante el desarrollo del proyecto utilicé ChatGPT como herramienta de apoyo pa
 Organización de la estructura del proyecto
 
 <img width="834" height="756" alt="Captura de pantalla_12-6-2026_221412_chatgpt com" src="https://github.com/user-attachments/assets/95d4ea2f-4d05-49a6-9e75-4178cc6249d8" />
+
 
 Explicación de conceptos técnicos
 
