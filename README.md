@@ -15,20 +15,26 @@ Además, incluye documentación con Swagger (OpenAPI) para facilitar la prueba y
 Antes de ejecutar el proyecto necesitas tener instalado:
 
 Node.js (v16 o superior)
+
 PostgreSQL
+
 npm
+
 Git (opcional)
+
 ---
 
  Instalación y ejecución local
 
 1️⃣ Clonar el repositorio
-git clone <URL-DEL-REPO>
+git clone https://github.com/GiseMassiero/ProyectoM2_GisellaMassiero
+
 cd blog-api
 
 ---
 
 2️⃣ Instalar dependencias
+
 npm install
 
 --- 
@@ -38,10 +44,15 @@ npm install
 Crear un archivo .env en la raíz del proyecto:
 
 DB_USER=postgres
+
 DB_PASSWORD=tu_password
+
 DB_HOST=localhost
+
 DB_PORT=5432
+
 DB_NAME=BLOG_API
+
 
 
 4️⃣ Crear base de datos
@@ -53,10 +64,12 @@ database/schema.sql
 Esto crea las tablas:
 
 authors
+
 posts
 
 
 5️⃣ Ejecutar el servidor
+
 npm run dev
 
 El servidor corre en:
@@ -66,6 +79,7 @@ http://localhost:3000
 
 📡 Endpoints de la API
 👤 Authors
+
 GET /authors → Obtener todos los autores
 GET /authors/:id → Obtener autor por ID
 POST /authors → Crear autor
@@ -74,6 +88,7 @@ DELETE /authors/:id → Eliminar autor
 
 
 📝 Posts
+
 GET /posts → Obtener todos los posts
 GET /posts/:id → Obtener post por ID
 GET /posts/author/:authorId → Obtener posts por autor
@@ -102,10 +117,25 @@ Allí podrás ver y probar todos los endpoints.
 
 🧪 Tests
 
-Para ejecutar tests:
+Para ejecutar los tests del proyecto:
 
-Actualmente el proyecto no incluye tests automatizados.
-Las pruebas se realizan mediante Thunder Client.
+npm test
+
+⚠️ Importante
+
+Si es la primera vez que clonas el proyecto, primero instala dependencias:
+
+npm install
+
+Luego ejecuta los tests:
+
+npm test
+
+🧠 Extra (opcional pero recomendado)
+
+Si quieres ver más detalle de los tests:
+
+npx jest --runInBand
 
 
 🌍 Deployment (Railway)
@@ -125,9 +155,13 @@ DB_NAME
 
 Pasos:
 Subir el proyecto a GitHub
+
 Conectar repositorio en Railway
+
 Configurar variables de entorno
+
 Deploy automático
+
 
 
 🔗 URL pública:
