@@ -56,10 +56,15 @@ npm install
 Crear un archivo .env en la raíz del proyecto:
 
 DB_USER=postgres
+
 DB_PASSWORD=tu_password
+
 DB_HOST=localhost
+
 DB_PORT=5432
+
 DB_NAME=BLOG_API
+
 
 4️⃣ Crear base de datos
 
@@ -70,7 +75,10 @@ database/schema.sql
 Esto crea las tablas:
 
 authors
+
 posts
+
+
 
 5️⃣ Ejecutar el servidor
 
@@ -97,19 +105,30 @@ Desde allí se pueden probar todos los endpoints directamente.
 👤 Endpoints - Authors
 
 GET /authors → Obtener todos los autores
+
 GET /authors/:id → Obtener autor por ID
+
 POST /authors → Crear autor
+
 PUT /authors/:id → Actualizar autor
+
 DELETE /authors/:id → Eliminar autor
+
 
 📝 Endpoints - Posts
 
 GET /posts → Obtener todos los posts
+
 GET /posts/:id → Obtener post por ID
+
 GET /posts/author/:authorId → Obtener posts por autor
+
 POST /posts → Crear post
+
 PUT /posts/:id → Actualizar post
+
 DELETE /posts/:id → Eliminar post
+
 
 <img width="1543" height="728" alt="Captura de pantalla_12-6-2026_221223_localhost" src="https://github.com/user-attachments/assets/a0c11c7d-4e8c-4b7a-8bb3-f879397cc280" />
 
@@ -208,14 +227,23 @@ La IA fue utilizada como asistente educativo, sin reemplazar el desarrollo del c
 📌 Notas finales
 
 Asegurarse de que PostgreSQL esté activo antes de ejecutar el servidor
+
 Ejecutar schema.sql antes de iniciar la API
+
 Verificar correctamente las variables de entorno
+
 Swagger disponible en /api-docs
+
 
 🏁 Estado del proyecto
 
 ✔ API REST funcional
+
 ✔ CRUD completo (authors y posts)
+
 ✔ Arquitectura modular
+
 ✔ Base de datos PostgreSQL
+
 ✔ Documentación Swagger (OpenAPI)
+
