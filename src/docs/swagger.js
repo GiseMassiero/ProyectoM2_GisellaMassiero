@@ -9,14 +9,29 @@ const swaggerSpec = swaggerJsdoc({
       version: "1.0.0",
       description: "API REST de blog con Node.js, Express y PostgreSQL"
     },
+
+ 
+    tags: [
+      {
+        name: "Authors",
+        description: "Gestión de autores"
+      },
+      {
+        name: "Posts",
+        description: "Gestión de posts"
+      }
+    ],
+
     servers: [
       {
-        url: "http://localhost:3000",
-        description: "Servidor local"
+        url: process.env.BASE_URL || "http://localhost:3000",
+        description: "Servidor (local o producción)"
       }
     ]
   },
-  apis: ["./src/modules/**/*.routes.js"]
+
+
+  apis: ["./src/modules/**/*.js"]
 });
 
 module.exports = {

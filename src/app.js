@@ -15,40 +15,30 @@ let swaggerUi, swaggerSpec;
 
 try {
   authorsRoutes = require("./modules/authors/authors.routes");
-  console.log("✔ authorsRoutes OK");
-
   postsRoutes = require("./modules/posts/posts.routes");
-  console.log("✔ postsRoutes OK");
-
   ({ swaggerUi, swaggerSpec } = require("./docs/swagger"));
-  console.log("✔ swagger OK");
-
   errorHandler = require("./middlewares/errorHandler");
-  console.log("✔ errorHandler OK");
+
+  console.log("✔ Módulos cargados correctamente");
 
 } catch (error) {
   console.error("❌ ERROR AL IMPORTAR MÓDULOS:");
   console.error(error);
-
- 
-  if (process.env.NODE_ENV !== "test") {
-    process.exit(1);
-  }
 }
 
-
-app.use("/authors", authorsRoutes);
-app.use("/posts", postsRoutes);
-
+if (authorsRoutes) app.use("/authors", authorsRoutes);
+if (postsRoutes) app.use("/posts", postsRoutes);
 
 app.get("/", (req, res) => {
   res.json({ message: "API funcionando 🚀" });
 });
 
+if (swaggerUi && swaggerSpec) {
+  app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+}
 
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-
-
-app.use(errorHandler);
+if (errorHandler) {
+  app.use(errorHandler);
+}
 
 module.exports = app;
