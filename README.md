@@ -1,56 +1,56 @@
 
 📚 Blog API - Node.js + Express + PostgreSQL
-
 📌 Descripción del proyecto
 
 Este proyecto es una API REST para un sistema de blog que permite gestionar autores y posts.
 
-La API permite realizar operaciones CRUD completas sobre ambas entidades (creación, lectura, actualización y eliminación), y está desarrollada con:
+La API permite realizar operaciones CRUD completas sobre ambas entidades:
 
-Node.js
+* Crear
+* Leer
+* Actualizar
+* Eliminar
 
-Express
+Está desarrollada con:
 
-PostgreSQL
+* Node.js
+* Express
+* PostgreSQL
 
+🧱 Arquitectura
 
-Se implementa una arquitectura modular por capas, separando responsabilidades en:
+El proyecto sigue una arquitectura modular por capas:
 
-routes
+* routes
+* controllers
+* services
+* database
+* middlewares
 
-controllers
+Además, incluye documentación interactiva con Swagger (OpenAPI).
 
-services
-
-database
-
-Además, incluye documentación interactiva con Swagger (OpenAPI) para facilitar la prueba y exploración de los endpoints.
-
-⚙️ Requisitos:
+⚙️ Requisitos
 
 Antes de ejecutar el proyecto, asegurarse de tener instalado:
 
-Node.js (v16 o superior)
-
-PostgreSQL
-
-npm
-
-Git (opcional)
+-Node.js (v16 o superior)
+-PostgreSQL
+-npm
+-Git (opcional)
 
 
-🚀 Instalación y ejecución local
+🚀 Instalación y ejecución local:
 
 1️⃣ Clonar el repositorio
 git clone https://github.com/GiseMassiero/ProyectoM2_GisellaMassiero
 
 cd blog-api
 
-2️⃣ Instalar dependencias
+2️⃣ Instalar dependencias:
 
 npm install
 
-3️⃣ Configurar variables de entorno
+3️⃣ Configurar variables de entorno:
 
 
 Crear un archivo .env en la raíz del proyecto:
@@ -68,7 +68,7 @@ PORT=3000
 DB_NAME=BLOG_API
 
 
-4️⃣ Crear base de datos
+4️⃣ Crear base de datos:
 
 Ejecutar el archivo:
 
@@ -76,15 +76,29 @@ database/schema.sql
 
 Esto crea las tablas:
 
-authors
+* authors
 
-posts
+* posts
 
 
+5️⃣ Cargar datos de prueba (seed):
 
-5️⃣ Ejecutar el servidor
+El proyecto incluye un archivo seed.sql con datos de ejemplo.
 
-npm run dev
+Contiene:
+
+Autores de ejemplo
+
+Posts asociados a cada autor
+
+Posts publicados (published: true) y borradores (published: false)
+
+* Esto permite simular un blog real con contenido variado.
+
+
+6️⃣ Ejecutar el servidor:
+
+- npm run dev
 
 El servidor quedará disponible en:
 
@@ -131,6 +145,14 @@ PUT /posts/:id → Actualizar post
 
 DELETE /posts/:id → Eliminar post
 
+📊 Estado de los posts:
+
+* Los posts incluyen el campo:
+
+published: true → post publicado
+
+published: false → borrador
+
 
 <img width="1543" height="728" alt="Captura de pantalla_12-6-2026_221223_localhost" src="https://github.com/user-attachments/assets/a0c11c7d-4e8c-4b7a-8bb3-f879397cc280" />
 
@@ -162,17 +184,19 @@ npm test
 
 
 
-🌍 Deployment (Railway)
-
-Este proyecto se deployó en Railway.
-
-⚙️ Configuración importante
-
-En Railway el puerto se asigna automáticamente:
-
-PORT=process.env.PORT
 
 
+## 🌍 Deployment (Railway)
+
+El proyecto se encuentra desplegado en Railway:
+
+🔗 Base URL:
+
+
+
+📚 Documentación Swagger:
+
+http://localhost:3000/api-docs
 
 🔐 Variables de entorno en producción
 
@@ -191,13 +215,13 @@ DB_NAME
 
 🚀 Pasos de deploy:
 
-Subir el proyecto a GitHub
+1.Subir el proyecto a GitHub
 
-Conectar el repositorio en Railway
+2.Conectar el repositorio en Railway
 
-Configurar variables de entorno
+3.Configurar variables de entorno
 
-Deploy automático
+4.Deploy automático
 
 🌐 URL pública:
 
