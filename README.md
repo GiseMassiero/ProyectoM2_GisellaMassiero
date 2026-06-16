@@ -26,7 +26,7 @@ database
 
 Además, incluye documentación interactiva con Swagger (OpenAPI) para facilitar la prueba y exploración de los endpoints.
 
-⚙️ Requisitos
+⚙️ Requisitos:
 
 Antes de ejecutar el proyecto, asegurarse de tener instalado:
 
@@ -62,6 +62,8 @@ DB_PASSWORD=tu_password
 DB_HOST=localhost
 
 DB_PORT=5432
+
+PORT=3000
 
 DB_NAME=BLOG_API
 
@@ -138,7 +140,7 @@ DELETE /posts/:id → Eliminar post
 
 Este proyecto utiliza Jest para pruebas unitarias.
 
-▶️ Ejecutar tests
+▶️ Ejecutar tests: 
 
 npm test
 
@@ -162,7 +164,7 @@ npm test
 
 🌍 Deployment (Railway)
 
-Este proyecto se deployará en Railway.
+Este proyecto se deployó en Railway.
 
 ⚙️ Configuración importante
 
@@ -187,7 +189,7 @@ DB_PORT
 DB_NAME
 
 
-🚀 Pasos de deploy
+🚀 Pasos de deploy:
 
 Subir el proyecto a GitHub
 
@@ -197,12 +199,12 @@ Configurar variables de entorno
 
 Deploy automático
 
-🌐 URL pública
+🌐 URL pública:
 
 Pendiente de deployment
 
 
-🤖 Uso de Inteligencia Artificial
+🤖 Uso de Inteligencia Artificial:
 
 
 Durante el desarrollo del proyecto utilicé ChatGPT como herramienta de apoyo para:
@@ -224,7 +226,7 @@ Mejora de buenas prácticas en arquitectura modular
 
 La IA fue utilizada como asistente educativo, sin reemplazar el desarrollo del código ni el proceso de aprendizaje.
 
-📌 Notas finales
+📌 Notas finales:
 
 Asegurarse de que PostgreSQL esté activo antes de ejecutar el servidor
 
@@ -235,7 +237,7 @@ Verificar correctamente las variables de entorno
 Swagger disponible en /api-docs
 
 
-🏁 Estado del proyecto
+🏁 Estado del proyecto:
 
 ✔ API REST funcional
 
