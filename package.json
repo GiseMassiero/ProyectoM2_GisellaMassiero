@@ -5,11 +5,11 @@
   "description": "Blog API project",
   "main": "server.js",
 
-  "scripts": {
+"scripts": {
     "dev": "nodemon server.js --ignore *.env",
-    "start":  "node server.js",
+    "start": "node server.js",
     "test": "cross-env NODE_ENV=test jest --runInBand",
-    "seed": "node database/seed.sql"
+    "seed": "psql $DATABASE_URL -f database/seed.sql"
   },
 
   "type": "commonjs",
