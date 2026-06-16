@@ -3,10 +3,15 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(cors());
+console.log("✔ Express inicializado");
+
+
+app.use(cors({
+  origin: "*"
+}));
+
 app.use(express.json());
 
-console.log("✔ Express inicializado");
 
 let authorsRoutes;
 let postsRoutes;
@@ -26,16 +31,20 @@ try {
   console.error(error);
 }
 
+
 if (authorsRoutes) app.use("/authors", authorsRoutes);
 if (postsRoutes) app.use("/posts", postsRoutes);
+
 
 app.get("/", (req, res) => {
   res.json({ message: "API funcionando 🚀" });
 });
 
+
 if (swaggerUi && swaggerSpec) {
   app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 }
+
 
 if (errorHandler) {
   app.use(errorHandler);

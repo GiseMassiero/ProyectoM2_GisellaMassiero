@@ -83,18 +83,10 @@ Esto crea las tablas:
 
 5️⃣ Cargar datos de prueba (seed):
 
-El proyecto incluye un archivo seed.sql con datos de ejemplo.
+El proyecto incluye un script preparado para poblar tu base de datos local con autores y posts de prueba (incluyendo contenido publicado y borradores). Ejecutalo con:
 
-Contiene:
 
-Autores de ejemplo
-
-Posts asociados a cada autor
-
-Posts publicados (published: true) y borradores (published: false)
-
-* Esto permite simular un blog real con contenido variado.
-
+npm run seed
 
 6️⃣ Ejecutar el servidor:
 
@@ -147,7 +139,7 @@ DELETE /posts/:id → Eliminar post
 
 📊 Estado de los posts:
 
-* Los posts incluyen el campo:
+* Los posteos incluyen una propiedad booleana para filtrar su visibilidad:
 
 published: true → post publicado
 
@@ -160,7 +152,7 @@ published: false → borrador
 
 🧪 Tests
 
-Este proyecto utiliza Jest para pruebas unitarias.
+Este proyecto utiliza Jest y Supertest para la ejecución de pruebas de integración y unitarias sobre el entorno aislado de desarrollo.
 
 ▶️ Ejecutar tests: 
 
@@ -184,48 +176,36 @@ npm test
 
 
 
-
-
 ## 🌍 Deployment (Railway)
 
-El proyecto se encuentra desplegado en Railway:
+El proyecto se encuentra completamente desplegado y operativo en la nube de Railway.
 
-🔗 Base URL:
+🔗 Base URL Pública: https://proyectom2gisellamassiero-production.up.railway.app
 
+📚 Documentación Swagger en Producción: 
+https://proyectom2gisellamassiero-production.up.railway.app/api-docs
 
-
-📚 Documentación Swagger:
-
-http://localhost:3000/api-docs
 
 🔐 Variables de entorno en producción
 
-Configurar en Railway:
+A diferencia del entorno local de desarrollo, en Railway el servicio se conecta de forma segura a través de la infraestructura interna de la plataforma utilizando una variable integrada dinámica:
 
-DB_USER
-
-DB_PASSWORD
-
-DB_HOST
-
-DB_PORT
-
-DB_NAME
+DATABASE_URL (Gestionada y provista automáticamente por Railway de forma privada)
 
 
-🚀 Pasos de deploy:
+🚀 Pasos realizados para el despliegue:
 
-1.Subir el proyecto a GitHub
+1.  Subida del proyecto controlado a un repositorio de GitHub de manera versionada.
 
-2.Conectar el repositorio en Railway
+2. Vinculación y aprovisionamiento del entorno web en Railway.
 
-3.Configurar variables de entorno
+3. Creación y enlace privado del servicio backend con una instancia Cloud de PostgreSQL.
 
-4.Deploy automático
+4. Inyección del String de conexión dinámico con soporte SSL robusto mediante un Pool de conexiones híbrido.
 
-🌐 URL pública:
+5. Inicialización de datos de prueba (Poblado de base de datos remota) ejecutando directamente en la terminal remota de Railway el comando:
 
-Pendiente de deployment
+npm run seed
 
 
 🤖 Uso de Inteligencia Artificial:
@@ -242,23 +222,25 @@ Explicación de conceptos técnicos
 
 Documentación del README
 
-Implementación y configuración de Swagger (OpenAPI)
 
-Resolución de dudas sobre Node.js, Express y PostgreSQL
+* Resolución de dudas sobre Node.js, Express y PostgreSQL
 
-Mejora de buenas prácticas en arquitectura modular
+* Mejora de buenas prácticas en arquitectura modular
 
-La IA fue utilizada como asistente educativo, sin reemplazar el desarrollo del código ni el proceso de aprendizaje.
+* Configuración estandarizada de la suite interactiva Swagger (OpenAPI).
+
+* Análisis de debugging en cadenas de conexión en la fase de Producción y despliegue seguro con SSL.
+
+La IA fue utilizada como un asistente pedagógico y de consulta técnica, sin reemplazar el desarrollo del código ni el proceso de aprendizaje.
 
 📌 Notas finales:
 
-Asegurarse de que PostgreSQL esté activo antes de ejecutar el servidor
+Asegurarse de tener el motor de PostgreSQL activo en local antes de ejecutar el comando de inicio.
 
-Ejecutar schema.sql antes de iniciar la API
+Ejecutar las queries de schema.sql antes de levantar por primera vez el entorno de desarrollo.
 
 Verificar correctamente las variables de entorno
 
-Swagger disponible en /api-docs
 
 
 🏁 Estado del proyecto:
@@ -273,3 +255,4 @@ Swagger disponible en /api-docs
 
 ✔ Documentación Swagger (OpenAPI)
 
+✔ Suite de 13 tests unitarios/integración validados en verde
