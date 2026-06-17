@@ -23,14 +23,16 @@ const swaggerSpec = swaggerJsdoc({
     ],
 
  servers: [
+
+     {
+        url: "https://proyectom2gisellamassiero-production.up.railway.app",
+        description: "Servidor de Producción (Railway)"
+      },
       {
         url: "http://localhost:3000",
         description: "Servidor Local (Desarrollo)"
-      },
-      {
-        url: "https://proyectom2gisellamassiero-production.up.railway.app",
-        description: "Servidor de Producción (Railway)"
       }
+   
     ]
   },
 
