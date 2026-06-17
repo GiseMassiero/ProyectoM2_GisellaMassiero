@@ -1,5 +1,8 @@
 
 📚 Blog API - Node.js + Express + PostgreSQL
+
+---
+
 📌 Descripción del proyecto
 
 Este proyecto es una API REST para un sistema de blog que permite gestionar autores y posts.
@@ -17,6 +20,8 @@ Está desarrollada con:
 * Express
 * PostgreSQL
 
+---
+
 🧱 Arquitectura
 
 El proyecto sigue una arquitectura modular por capas:
@@ -29,6 +34,8 @@ El proyecto sigue una arquitectura modular por capas:
 
 Además, incluye documentación interactiva con Swagger (OpenAPI).
 
+---
+
 ⚙️ Requisitos
 
 Antes de ejecutar el proyecto, asegurarse de tener instalado:
@@ -38,6 +45,7 @@ Antes de ejecutar el proyecto, asegurarse de tener instalado:
 -npm
 -Git (opcional)
 
+---
 
 🚀 Instalación y ejecución local:
 
@@ -96,6 +104,7 @@ El servidor quedará disponible en:
 
 http://localhost:3000
 
+---
 
 📡 Documentación de la API (Swagger / OpenAPI)
 
@@ -103,12 +112,13 @@ La documentación interactiva está disponible en:
 
 http://localhost:3000/api-docs
 
-<img width="1529" height="538" alt="Captura de pantalla_12-6-2026_213057_localhost" src="https://github.com/user-attachments/assets/9477c632-b96a-4815-9bbf-fa1ac4b79ac0" />
+<img width="976" height="365" alt="image" src="https://github.com/user-attachments/assets/4548ce87-fcb0-4957-b166-341efec3fb22" />
 
 
 Desde allí se pueden probar todos los endpoints directamente.
 
-<img width="1563" height="943" alt="Captura de pantalla_12-6-2026_215944_localhost" src="https://github.com/user-attachments/assets/f844c967-4518-4b65-bfd8-4b461c144ab4" />
+<img width="1560" height="780" alt="image" src="https://github.com/user-attachments/assets/8bd3ac60-6ae9-4672-a069-3547c8d08d19" />
+
 
 👤 Endpoints - Authors
 
@@ -148,7 +158,7 @@ published: false → borrador
 
 <img width="1543" height="728" alt="Captura de pantalla_12-6-2026_221223_localhost" src="https://github.com/user-attachments/assets/a0c11c7d-4e8c-4b7a-8bb3-f879397cc280" />
 
-
+---
 
 🧪 Tests
 
@@ -174,7 +184,7 @@ Luego ejecutar:
 
 npm test
 
-
+---
 
 ## 🌍 Deployment (Railway)
 
@@ -182,9 +192,13 @@ El proyecto se encuentra completamente desplegado y operativo en la nube de Rail
 
 🔗 Base URL Pública: https://proyectom2gisellamassiero-production.up.railway.app
 
+<img width="665" height="674" alt="image" src="https://github.com/user-attachments/assets/a74a6556-ec37-4976-95fc-4d40d425fd68" />
+
+
 📚 Documentación Swagger en Producción: 
 https://proyectom2gisellamassiero-production.up.railway.app/api-docs
 
+---
 
 🔐 Variables de entorno en producción
 
@@ -207,21 +221,21 @@ DATABASE_URL (Gestionada y provista automáticamente por Railway de forma privad
 
 npm run seed
 
+---
 
 🤖 Uso de Inteligencia Artificial:
 
 
 Durante el desarrollo del proyecto utilicé ChatGPT como herramienta de apoyo para:
 
-Organización de la estructura del proyecto
+* Organización de la estructura del proyecto
 
 <img width="834" height="756" alt="Captura de pantalla_12-6-2026_221412_chatgpt com" src="https://github.com/user-attachments/assets/95d4ea2f-4d05-49a6-9e75-4178cc6249d8" />
 
 
-Explicación de conceptos técnicos
+* Explicación de conceptos técnicos
 
-Documentación del README
-
+* Documentación del README
 
 * Resolución de dudas sobre Node.js, Express y PostgreSQL
 
@@ -233,6 +247,8 @@ Documentación del README
 
 La IA fue utilizada como un asistente pedagógico y de consulta técnica, sin reemplazar el desarrollo del código ni el proceso de aprendizaje.
 
+---
+
 📌 Notas finales:
 
 Asegurarse de tener el motor de PostgreSQL activo en local antes de ejecutar el comando de inicio.
@@ -241,7 +257,7 @@ Ejecutar las queries de schema.sql antes de levantar por primera vez el entorno 
 
 Verificar correctamente las variables de entorno
 
-
+---
 
 🏁 Estado del proyecto:
 
@@ -256,3 +272,7 @@ Verificar correctamente las variables de entorno
 ✔ Documentación Swagger (OpenAPI)
 
 ✔ Suite de 13 tests unitarios/integración validados en verde
+
+<img width="588" height="819" alt="image" src="https://github.com/user-attachments/assets/6533662f-7b2e-43f2-bcdb-4865d8e02c4a" />
+
+<img width="580" height="713" alt="image" src="https://github.com/user-attachments/assets/fca512a8-38e8-43ae-a1ab-0a11f1353e0d" />
