@@ -52,7 +52,7 @@ Antes de ejecutar el proyecto, asegurarse de tener instalado:
 1️⃣ Clonar el repositorio
 git clone https://github.com/GiseMassiero/ProyectoM2_GisellaMassiero
 
-cd blog-api
+cd ProyectoM2_GisellaMassiero
 
 2️⃣ Instalar dependencias:
 
@@ -110,7 +110,10 @@ http://localhost:3000
 
 La documentación interactiva está disponible en:
 
-http://localhost:3000/api-docs
+- 💻 Local: http://localhost:3000/api-docs (con el servidor corriendo en tu máquina)
+
+- 🚀 Producción: https://proyectom2gisellamassiero-production.up.railway.app/api-docs 
+(desplegado en vivo en Railway)
 
 <img width="976" height="365" alt="image" src="https://github.com/user-attachments/assets/4548ce87-fcb0-4957-b166-341efec3fb22" />
 
