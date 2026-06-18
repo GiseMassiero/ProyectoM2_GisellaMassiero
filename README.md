@@ -228,37 +228,61 @@ npm run seed
 
 🤖 Uso de Inteligencia Artificial:
 
+Durante el desarrollo de este proyecto se utilizaron herramientas de Inteligencia Artificial (Chat GPT -Gemini ) como apoyo para comprender conceptos, resolver dudas técnicas y mejorar la calidad del código. 
 
-Durante el desarrollo del proyecto utilicé ChatGPT como herramienta de apoyo para:
 
-* Organización de la estructura del proyecto
+1. Organización de la estructura del proyecto
+
+Prompt:
+
+"¿Cuál es una estructura recomendada para una API REST en Node.js utilizando Express, PostgreSQL y arquitectura por capas?"
+
+Impacto en el proyecto:
+
+Permitió organizar el código en carpetas separadas para rutas, controladores, modelos y configuración de base de datos, mejorando la mantenibilidad y claridad del proyecto.
+
 
 <img width="834" height="756" alt="Captura de pantalla_12-6-2026_221412_chatgpt com" src="https://github.com/user-attachments/assets/95d4ea2f-4d05-49a6-9e75-4178cc6249d8" />
 
 
-* Explicación de conceptos técnicos
+2. Resolución de errores
 
-* Documentación del README
+Prompt:
 
-* Resolución de dudas sobre Node.js, Express y PostgreSQL
+"Estoy obteniendo el siguiente error al conectar PostgreSQL con Node.js: [mensaje de error]. ¿Qué puede estar ocurriendo?"
 
-* Mejora de buenas prácticas en arquitectura modular
+Impacto en el proyecto:
 
-* Configuración estandarizada de la suite interactiva Swagger (OpenAPI).
+Facilitó la identificación y corrección de problemas relacionados con variables de entorno, conexiones a la base de datos y configuración de dependencias.
 
-* Análisis de debugging en cadenas de conexión en la fase de Producción y despliegue seguro con SSL.
+3. Creación del README
 
-La IA fue utilizada como un asistente pedagógico y de consulta técnica, sin reemplazar el desarrollo del código ni el proceso de aprendizaje.
+Prompt:
 
----
+"Ayúdame a redactar un README profesional para una API REST desarrollada con Node.js, Express, PostgreSQL, Swagger y Railway."
 
-📌 Notas finales:
+Impacto en el proyecto:
 
-Asegurarse de tener el motor de PostgreSQL activo en local antes de ejecutar el comando de inicio.
+Sirvió como base para la documentación final del repositorio, incluyendo instalación, configuración, ejecución local, testing y deployment.
 
-Ejecutar las queries de schema.sql antes de levantar por primera vez el entorno de desarrollo.
+4. Deployment en Railway
 
-Verificar correctamente las variables de entorno
+Prompt:
+
+"¿Cómo desplegar una API Node.js con PostgreSQL en Railway y configurar correctamente las variables de entorno?"
+
+Impacto en el proyecto:
+
+Ayudó a comprender el proceso de despliegue, configuración de variables de entorno y conexión a la base de datos en producción.
+
+Reflexión sobre el uso de IA
+
+La Inteligencia Artificial fue utilizada como una herramienta de apoyo para investigar soluciones, comprender conceptos y mejorar la documentación del proyecto.
+
+ Todas las respuestas obtenidas fueron analizadas, verificadas y adaptadas antes de ser incorporadas al desarrollo final. 
+
+ Su uso permitió agilizar tareas de investigación y documentación, manteniendo siempre el criterio y validación humana en las decisiones de implementación.
+
 
 ---
 
